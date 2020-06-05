@@ -1,0 +1,27 @@
+@keyframes animacao {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.container-modal {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #0e0a14;
+
+  animation: animacao 1s;
+}
+.container-modal h2 {
+  margin-top: 10px;
+  color: #f0f0f5;
+}
+
+.Modal {
+  width: 200px;
+  height: 200px;
+}
