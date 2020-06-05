@@ -1,2 +1,7 @@
 node_modules
+uploads/*
 *.log
+!uploads/.gitkeep
+assets/images/*.jpg
+!assets/images/.gitkeep
+*.sqlite

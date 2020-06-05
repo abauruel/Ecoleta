@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import knex from "../database/connection";
+import { Transaction } from "knex";
 
 class Items {
   async create(request: Request, response: Response): Promise<Response> {
@@ -16,7 +17,7 @@ class Items {
       return {
         id: item.id,
         title: item.title,
-        image_url: `http://localhost:3000/uploads/${item.image}`,
+        image_url: `http://localhost:3333/uploads/${item.image}`,
       };
     });
 
